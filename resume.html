@@ -1,0 +1,593 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Jevin Anderson</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Jevin Anderson
+					</h1>
+					<h2>
+						Software Engineer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">jevinanderson@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(417) 793-7773</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="http://jevinanderson.com/">http://jevinanderson.com/</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Jevin Anderson is a web and mobile application developer. A Mizzou Alumni, Jevin currently works at PayPal doing front end web development work.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://twitter.com/JevinAnderson">JevinAnderson</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						GitHub
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://github.com/JevinAnderson">JevinAnderson</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+						<div class="url">
+							<a href="https://www.linkedin.com/in/jevin-anderson-30b7a926">https://www.linkedin.com/in/jevin-anderson-30b7a926</a>
+						</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						CodePen
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://codepen.io/JevinAnderson/">JevinAnderson</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						CodeSandbox
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://codesandbox.io/u/JevinAnderson">JevinAnderson</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>PayPal</span>
+					<span class="date">
+						2017-07-31 — 
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.paypal.com">https://www.paypal.com</a>
+				</div>
+				<div class="position">
+					Software Engineer
+				</div>
+				<div class="summary">
+					<p>PayPal Holdings, Inc. is an American company operating a worldwide online payments system that supports online money transfers and serves as an electronic alternative to traditional paper methods like checks and money orders.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Provided support for the credit user experience team with web and iOS development.</li>
+					<li class="bullet">Web development stack includes Node.js, React.js, and Redux.js</li>
+					<li class="bullet">Designed and implemented universal JavaScript applications</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Recruiting Ventures</span>
+					<span class="date">
+						2015-12-14 — 2017-07-15
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.recruitingventures.com">http://www.recruitingventures.com</a>
+				</div>
+				<div class="position">
+					Front End Software Engineer
+				</div>
+				<div class="summary">
+					<p>Recruiting.com’s mission is to build unique and innovative talent acquisition software and services that help companies compete for talent through more authentic, relevant, and personalized experiences.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Designed, implemented, and maintained infracture to host client career sites.</li>
+					<li class="bullet">Modernized many legacy solutions which involved migrating from IIS/ASP to Node.js/HTML5/JavaScript.</li>
+					<li class="bullet">Current development stack includes NGINX, Node.js, React.js, Redux.js, and Flux.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Esri</span>
+					<span class="date">
+						2014-01-24 — 2015-12-04
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.esri.com/">http://www.esri.com/</a>
+				</div>
+				<div class="position">
+					Software Developer
+				</div>
+				<div class="summary">
+					<p>Esri is an international supplier of geographic information system (GIS) software, web GIS and geodatabase management applications.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Developed GIS applications for mobile devices and the web.</li>
+					<li class="bullet">Worked primarily with Objective-C and ArcGIS runtime for iOS</li>
+					<li class="bullet">Secondarily worked with JavaScript and the ArcGIS JavaScript API</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Veterans United</span>
+					<span class="date">
+						2013-05-24 — 2013-10-04
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.veteransunited.com/">https://www.veteransunited.com/</a>
+				</div>
+				<div class="position">
+					Web Application Developer Intern
+				</div>
+				<div class="summary">
+					<p>As experts on the VA Loan, Veterans United Home Loans is dedicated to making the American dream of homeownership a reality for those who so bravely served.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Worked with HTML, JavaScript, and PHP</li>
+					<li class="bullet">Did web development work for various tools used by loan officers</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Garmin</span>
+					<span class="date">
+						2012-06-01 — 2012-09-04
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.garmin.com/">http://www.garmin.com/</a>
+				</div>
+				<div class="position">
+					Software Engineering Intern
+				</div>
+				<div class="summary">
+					<p>Garmin Ltd. (shortened to Garmin and formerly known as ProNav) is an American multinational technology company founded by Gary Burrell and Min Kao in 1989 from Lenexa, Kansas and is based in Schaffhausen, Switzerland. The company is known for its specialization in GPS technology development for its use in automotive, aviation, marine, outdoor, and sport activities and utilities. Due to their development in wearable technology, they have also been competing with activity tracker and smartwatch consumer developers such as Fitbit and Apple.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Worked with C/C++</li>
+					<li class="bullet">Worked in the Automotive OEM department</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>USMC</span>
+					<span class="date">
+						2003-10-20 — 2009-03-20
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.marines.com/">http://www.marines.com/</a>
+				</div>
+				<div class="position">
+					Sergeant
+				</div>
+				<div class="summary">
+					<p>The United States Marine Corps (USMC) is a branch of the United States Armed Forces responsible for providing power projection, using the mobility of the United States Navy to, by Congressional mandate, rapidly deliver combined-arms task forces on land, at sea, and in the air.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Worked at the American Embassy in Rome, Italy (2008-2009)</li>
+					<li class="bullet">Worked at the American Embassy in Maputo, Mozambique (2007-2008).</li>
+					<li class="bullet">Worked at the American Embassy in Ottawa, Canada (2006-2007).</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>University of Missouri, Columbia</span>
+					<span class="date">
+						2009-09-24 — 2013-12-19
+					</span>
+				</h4>
+				<div class="area">
+					Computer Science
+				</div>
+				<div class="studyType">
+					Bachelor
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Web Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Javascript</li>
+					<li>Node.js</li>
+					<li>NPM</li>
+					<li>NVM</li>
+					<li>Express.js</li>
+					<li>React.js</li>
+					<li>Redux.js</li>
+					<li>Babel</li>
+					<li>PM2</li>
+					<li>ESLint</li>
+					<li>Sass</li>
+					<li>Less</li>
+					<li>Chrome Developer Tools</li>
+					<li>Postman</li>
+					<li>webpack</li>
+					<li>Dojo</li>
+					<li>jQuery</li>
+					<li>TypeScript</li>
+					<li>Flow</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Mobile Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>iOS</li>
+					<li>Objective-C</li>
+					<li>C</li>
+					<li>C++</li>
+					<li>Xcode</li>
+					<li>CocoaPods</li>
+					<li>Calabash</li>
+					<li>ArcGIS runtime for iOS</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>General Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>Version control</li>
+					<li>Git</li>
+					<li>GitHub</li>
+					<li>Jenkins</li>
+					<li>MySQL</li>
+					<li>phpMyAdmin</li>
+					<li>Restful Api&#x27;s</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Native speaker
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Superheroes</h4>
+				</div>
+				<ul class="keywords">
+					<li>Batman</li>
+					<li>Superman</li>
+					<li>Watchmen</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Literature - Fiction</h4>
+				</div>
+				<ul class="keywords">
+					<li>fantasy</li>
+					<li>horror</li>
+					<li>science fiction</li>
+					<li>classics</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+
+	</div>
+	
+	</body>
+</html>
