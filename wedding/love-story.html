@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Their love story</title>
+		<meta name="author" content="Jevin Anderson">
+		<link rel="icon" href="images/wedding-couple.ico">
+		<link rel="stylesheet" href="css/Font-Awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css"/‌​>
+		<link rel="stylesheet" href="https://js.arcgis.com/4.0beta3/esri/css/main.css">
+		<script src="config/cdnDojoConfig.js"></script>
+		<script src="https://js.arcgis.com/4.0beta3/"></script>
+		<script src="js/StorageFunctions.js"></script>
+		<script type="text/javascript">
+			require([
+					"widgets/LoveStoryController",
+					"dojo/domReady!"
+				], function(LoveStoryController) {
+				var currentPage = location.pathname.split('/').pop() || 'index.html';
+				var history = getObject('history');
+				history = history || {
+					visits: 0,
+					currentPage: currentPage
+				};
+				history.visits++;
+				history.previousPage = history.currentPage;
+				history.currentPage = currentPage
+				saveObject('history', history);
+
+				var controller = new LoveStoryController({
+					history: history
+				}, 'content');
+				controller.startup();
+			});
+		</script>
+		<style>
+			html, body {
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body class="claro">
+		<div id="content"></div>
+	</body>
+</html>

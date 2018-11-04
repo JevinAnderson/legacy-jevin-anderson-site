@@ -1,0 +1,15 @@
+.GraphicsCarouselWidget{
+	width: 100%;
+}
+.GraphicsCarouselWidget .CarouselControls{
+	margin: 0 auto;
+}
+
+.GraphicsCarouselWidget .GraphicPlaceholderDiv{
+	display: inline-block;
+}
+
+.GraphicsCarouselWidget .CarouselControls i{
+	cursor: pointer;
+	color: gray;
+}

@@ -1,0 +1,31 @@
+.StoryBoardStoryWidget {
+	opacity: .25;
+	border-bottom: 3px solid black;
+  opacity: .25;
+  margin: 10px;
+  border: 1px solid #E0E0E0;
+  /* border-bottom: 3px solid black; */
+  box-shadow: 2px 2px 12px -1px rgba(0,0,0,.2);
+  border-radius: 4px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.bottomPadding {
+  width: 100%;
+  height: 250px;
+}
+
+.StoryBoardStoryWidget img {
+  width: 100%;
+  height: auto;
+}
+
+.StoryBoardStoryWidget p{
+	padding: 10px;
+	font-size: 130%;
+}
+
+.StoryBoardStoryWidget h1{
+	padding: 10px;
+}

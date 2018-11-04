@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Their wedding</title>
+		<meta name="author" content="Jevin Anderson">
+		<link rel="icon" href="images/wedding-couple.ico">
+		<link rel="stylesheet" href="css/Font-Awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/faq.css"><p>
+		<script src="config/localDojoConfig.js"></script>
+		<script src="js/lib/dojo/dojo.js"></script>
+		<script src="js/StorageFunctions.js"></script>
+		<script type="text/javascript">
+			require([
+					"widgets/FaqController",
+					"dojo/domReady!"
+				], function(FaqController) {
+				var currentPage = location.pathname.split('/').pop() || 'index.html';
+				var history = getObject('history');
+				history = history || {
+					visits: 0,
+					currentPage: currentPage
+				};
+				history.visits++;
+				history.previousPage = history.currentPage;
+				history.currentPage = currentPage
+				saveObject('history', history);
+
+				var faqController = new FaqController({
+					history: history
+				}).placeAt('content');
+				faqController.startup();
+			});
+		</script>
+	</head>
+	<body class="claro">
+		<div id="content"></div>
+		<div class="faq-list">
+			<div class="faq-item">
+				<!-- TODO: style this -->
+				<!-- <i class="fa fa-chevron-right"></i> -->
+				<div class="faq-question">What should I wear?</div>
+				<div class="faq-answer large">
+					<p>We encourage you to wear casual island clothing. I've included some examples below. If you have any questions or concerns feel free to contact Jamela or Jevin</p>
+					<img src="images/island-wedding-group.jpg">
+					<img src="images/mana_island_wedding.jpg">
+				</div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">What are the wedding colors?</div>
+				<div class="faq-answer small">
+					<p>The colors are ocean blues and whites, but really, whatever you feel comfortable with.</p>
+				</div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">What should we get you for gifts?</div>
+				<div class="faq-answer small">
+					<p>Please only give monetary gifts or gift cards. Luggage space is a limiting factor.</p>
+				</div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">What is the best way to book my trip?</div>
+				<div class="faq-answer medium">
+					<p>We suggest calling Carnival cruise and using our booking #, however you can do it through their <a href="http://www.carnival.com/">website</a>.</p>
+					<p>Guest Services #: 18007647315</p>
+					<p>Booking #: 9H8RK6</p>
+					<p>Code: 1221</p>
+					<p>Ship: Paradise</p>
+					<p>Date: 12/10/2016</p>
+					<p>Place: Grand Cayman and Cozumel</p>
+				</div>
+			</div>
+			<div class="faq-item">
+				<div class="faq-question">Can we do our own excursions?</div>
+				<div class="faq-answer small">
+					<p>Yes! We encourage you to. We will have a planned group dinner each night, but otherwise feel free to use your time however you like.</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/faq.js" async defer></script>
+	</body>
+</html>

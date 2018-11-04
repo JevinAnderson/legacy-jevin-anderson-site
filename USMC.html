@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>USMC</title>
+        <link rel="shortcut icon" href="images/usmcfavicon.ico" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Happy Birthday Devils">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <style type="text/css">
+          body {
+            background: #CA1527;
+          }
+
+          #content {
+            width: 100%;
+            max-height: 50vh;
+            overflow: scroll;
+            padding: 10px;
+            font-size: 24px;
+            background-color: #FFF;
+            border: #FFD229 solid;
+          }
+
+          .flag {
+            width: 100%;
+            margin-top: 20px;
+          }
+
+          .hide {
+            display: none;
+          }
+
+
+          @media(min-width: 481px){
+             #content {
+              position: fixed;
+              top: 0;
+              left: 0;
+              max-width: 400px;
+              margin: 10px;
+            }
+
+            .flag {
+              height: 100vh;
+              width: auto;
+              display: block;
+              margin: 0 auto;
+            }
+          }
+
+        </style>
+    </head>
+    <body>
+      <div id="content" class="hide"></div>
+      <img src="images/Flag_of_the_United_States_Marine_Corps.svg.png" alt="USMC Flag" class="flag">
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://api.loggr.net/1/loggr.min.js?l=node_career_sites&a=b0a302e2d17547aab22fce438e0fe676"></script>
+    <script type="text/javascript">
+      const $content = $('#content');
+      const [content] = $content;
+
+      var index = 0;
+      const facts = [
+        'According to tradition, Tun Tavern was where the United States Marines held their first recruitment drive. On November 10, 1775, the Second Continental Congress commissioned the innkeeper and former Quaker Samuel Nicholas to raise two battalions of Marines in Philadelphia.',
+        'Devil Dog is a motivational Nickname for a U.S. Marine. It is said by US Marines to be based on the apocryphal use of "Teufel Hunden" by German soldiers to describe Marines fighting in World War I.',
+        'Chesty Puller. Lewis Burwell "Chesty" Puller (June 26, 1898 – October 11, 1971) was a United States Marine Corps lieutenant general who fought guerrillas in Haiti and Nicaragua, and fought in World War II and the Korean War. Puller is the most decorated Marine in American history.',
+        'Leatherneck is a military slang term for a member of the United States Marine Corps, or of the British Royal Marines. It is generally believed to originate in the wearing of a leather "stock" or collar around the neck, which kept the posture erect.',
+        'John Archer Lejeune (January 10, 1867 – November 20, 1942) was a United States Marine Corps lieutenant general and the 13th Commandant of the Marine Corps. Lejeune had nearly 40 years service in the Marine Corps including commanding the U.S. Army\'s 2nd Division during World War I. His service with the Marine Corps after he retired was as the 5th Superintendent of the Virginia Military Institute. Marine Corps Base Camp Lejeune in North Carolina was named in his honor during World War II. Lejeune is often referred to in the present day as being the "greatest of all Leathernecks" and the "Marine\'s Marine."',
+        'During World War II sailors began referring to Marines as Jarheads. Presumably the high collar on the Marine Dress Blues uniform made a Marine\'s head look like it was sticking out of the top of a Mason jar. Marines were not insulted. Instead, they embraced the new moniker as a term of utmost respect.',
+        'Smedley Darlington Butler (July 30, 1881 – June 21, 1940) was a United States Marine Corps major general, the highest rank authorized at that time, and at the time of his death the most decorated Marine in U.S. history. During his 34-year career as a Marine, he participated in military actions in the Philippines, China, in Central America and the Caribbean during the Banana Wars, and France in World War I. By the end of his career, Butler had received 16 medals, five for heroism. He is one of 19 men to receive the Medal of Honor twice, one of three to be awarded both the Marine Corps Brevet Medal and the Medal of Honor, and the only Marine to be awarded the Brevet Medal and two Medals of Honor, all for separate actions.',
+        'Semper fidelis is a Latin phrase that means "always faithful" or "always loyal". In the United States it is best known as the motto of the United States Marine Corps.',
+        'Carlos Norman Hathcock II (May 20, 1942 – February 22, 1999) was a United States Marine Corps (USMC) sniper with a service record of 93 confirmed kills. Hathcock\'s record and the extraordinary details of the missions he undertook made him a legend in the U.S. Marine Corps. He was honored by having a rifle named after him: a variant of the M21 dubbed the Springfield Armory M25 White Feather, for the nickname "White Feather" given to Hathcock by the North Vietnamese Army (NVA).',
+        'The Eagle, Globe, and Anchor is the official emblem and insignia of the United States Marine Corps. It is commonly referred to as an EGA, although this usage is officially discouraged by the U.S. Marine Corps.',
+        'The Marine Corps Core values are Honor, Courage, and Commitment.',
+        'The birthplace of the Marine Corps was Tun Tavern, Philadelphia, Pennsylvania.',
+        'Official colors of the Marine Corps are Scarlet and Gold',
+        'Archibald Henderson (January 21, 1783 – January 6, 1859) was the longest-serving Commandant of the Marine Corps, serving from 1820 to 1859. His name is learned by all recruits at Marine recruit training (Boot Camp) as the "Grand old man of the Marine Corps," serving in the United States Marine Corps for 38 years.'
+      ];
+
+      function displayMessage(index) {
+        const message = facts[index];
+        content.innerHTML = message;
+
+        setTimeout(() => {
+
+          displayMessage(index + 1 >= facts.length ? 0 : index + 1);
+        }, 20000);
+      }
+
+      $(function ready(){
+        const initialIndex = Math.floor(Math.random() * facts.length);
+        displayMessage(initialIndex);
+        content.className = '';
+      });
+    </script>
+</html>

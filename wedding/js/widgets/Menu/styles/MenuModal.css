@@ -1,0 +1,59 @@
+.MenuModalWidget {
+  color: white;
+  font-family: 'Linden Hill';
+  position: absolute;
+  top: -500px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  visibility: hidden;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.MenuModalWidget .CloseButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.MenuModalWidget .CloseButton:hover {
+  background-color: red;
+  box-shadow: 1px 1px maroon;
+  cursor: pointer;
+}
+
+.MenuModalWidget a {
+  font-size: 200%;
+  color: white;
+  text-decoration: none;
+  margin: 20px 20px;
+  height: 50px;
+}
+
+.MenuModalWidget a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .MenuModalWidget {
+    height: auto;
+    background-color: #007ac2;
+  }
+
+  .MenuModalWidget a {
+    display: block;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 100%;
+    border-width: 2px;
+    border: none;
+    border-bottom: 1px solid #0c6ea7;
+  }
+}
+
+@media (max-height: 640px) {
+}

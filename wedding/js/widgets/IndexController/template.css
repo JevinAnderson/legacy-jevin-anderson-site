@@ -1,0 +1,26 @@
+.IndexControllerWidget{
+	width: 80%;
+	margin: 20px auto;
+	color: white;
+	font-family: 'Windsong';
+}
+
+.IndexControllerWidget h1,
+.IndexControllerWidget h2{
+	text-align: center;
+}
+
+.IndexControllerWidget h1{
+	font-family: 'Windsong';
+	font-size: 500%;
+	padding: 0;
+	margin: 0;
+}
+
+.IndexControllerWidget h2{
+	font-family: 'Windsong';
+	font-size: 250%;
+	margin: 0;
+	padding: 0;
+}
+
